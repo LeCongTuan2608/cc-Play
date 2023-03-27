@@ -1,0 +1,22 @@
+//slick slider
+button {
+   position: absolute;
+   background-color: rgba(0, 0, 0, 0.337);
+   z-index: 1;
+   border: none;
+   border-radius: 5px;
+   padding: 10px 15px;
+   font-size: 30px;
+   color: white;
+   cursor: pointer;
+}
+.slick-prev {
+   top: 50%;
+   transform: translateY(-50%);
+   left: -0.5%;
+}
+.slick-next {
+   top: 50%;
+   transform: translateY(-50%);
+   right: -0.5%;
+}

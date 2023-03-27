@@ -1,0 +1,365 @@
+//phần responsize
+@media screen and (max-width: 1280px) {
+   .page-top-content {
+      font-size: 25px;
+   }
+   .home-category-highlights {
+      margin: 50px 0 50px;
+      padding: 0 5%;
+   }
+   /////////////////////////// category.html
+   .category-list {
+      padding: 0 5%;
+   }
+   ////////////////////////// watchMovie.html
+}
+@media screen and (max-width: 1024px) {
+   .our-story-header {
+      & > a {
+         display: flex;
+      }
+   }
+   .our-story-logo {
+      display: none;
+   }
+   .navbar-menu {
+      width: 100%;
+      align-items: center;
+   }
+
+   .menu {
+      // margin-left: 20px;
+      position: relative;
+      border: none;
+      & ul {
+         align-items: center;
+         & li > a {
+            padding: 3.3px;
+            display: block;
+         }
+         & li .list ul li a {
+            padding: 10px;
+         }
+      }
+      & ul li:hover {
+         & span {
+            background-color: rgba(136, 136, 136, 0.795);
+         }
+         & ul {
+            display: block;
+            position: absolute;
+            width: 100%;
+            top: 165%;
+            background-color: #000000d0;
+            & li {
+               padding: 0;
+               text-align: center;
+            }
+         }
+      }
+   }
+
+   .search {
+      justify-content: center;
+      & input {
+         display: block;
+      }
+   }
+   .page-top-content {
+      font-size: 20px;
+   }
+   .middle-page-mid-posters {
+      & ul {
+         width: 100%;
+         height: 100%;
+      }
+   }
+   .home-category-highlights {
+      margin: 50px 0 50px;
+      padding: 0 2%;
+   }
+   /////////////////////////// category.html
+   .category-list {
+      padding: 0 2%;
+   }
+   /////////////////////////// watchMovie.html
+   .movie-content {
+      flex: calc(100% / 3);
+   }
+   .infor-publisher {
+      flex: calc(100% / 5);
+   }
+   .ep-container {
+      & ul {
+         grid-template-columns: repeat(8, 1fr);
+      }
+   }
+}
+@media screen and (max-width: 800px) {
+   .our-story-header {
+      padding: 0 20px;
+      & .our-story-logo {
+         & a {
+            font-size: 25px;
+            & ion-icon {
+               font-size: 35px;
+               margin-top: -5px;
+            }
+            & span {
+               margin-left: -5px;
+            }
+         }
+      }
+      & > a {
+         padding: 5px 10px;
+      }
+   }
+   .search {
+      // flex: none;
+      & input {
+         display: none;
+         // width: 100%;
+      }
+   }
+   .page-top-content {
+      font-size: 60%;
+   }
+   h2 {
+      font-size: 17px;
+   }
+   .middle-page-mid-posters {
+      & ul {
+         width: 100%;
+         height: 100%;
+      }
+   }
+   .home-category-highlights {
+      margin: 50px 0 50px;
+      padding: 0;
+   }
+   .middle-page-mid {
+      padding: 3%;
+   }
+   .footer {
+      padding: 0;
+   }
+   .footer-navigation-row {
+      flex-direction: column;
+   }
+   .footer-column-left {
+      flex-direction: row;
+      justify-content: space-around;
+      padding: 20px 0;
+      border-bottom: 2px solid rgba(40, 40, 40, 0.829);
+   }
+   .footer-column-center {
+      margin: 20px 0;
+      & .container-text {
+         text-align: center;
+         padding: 0 20px;
+      }
+   }
+   .footer-column-right {
+      align-items: center;
+   }
+   ///////////////////////// category.html
+   .body-category {
+      padding: 100px 3%;
+   }
+   .category-list {
+      padding: 0;
+   }
+   ///////////////////////// watchMovie.html
+   .body-container {
+      padding: 100px 5%;
+   }
+   .infor-movie {
+      display: block;
+      margin-bottom: 50px;
+   }
+   .movie-content {
+      position: relative;
+      padding: 0;
+      & .movie-title {
+         padding: 0 10px;
+         position: absolute;
+         top: -25%;
+         z-index: 5;
+      }
+   }
+   .infor-publisher {
+      gap: 5px 0;
+   }
+   .ep-container {
+      & ul {
+         grid-template-columns: repeat(6, 1fr);
+      }
+   }
+}
+@media screen and (max-width: 720px) {
+   .fixed-menu {
+      display: none;
+      position: fixed;
+      top: 0;
+      bottom: 0;
+      right: 0;
+      left: 0;
+      background-color: rgba(97, 97, 97, 0.732);
+   }
+   .menu {
+      // display: none;
+      position: fixed;
+      top: 0%;
+      background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%);
+      left: 0%;
+      height: 100%;
+      width: 30%;
+      & > ion-icon {
+         display: block;
+         color: $text_color;
+         position: absolute;
+         right: 1%;
+         top: 1%;
+         &:active {
+            color: red;
+         }
+      }
+      & .logo {
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         margin: 10px 0;
+         & ion-icon {
+            flex: 1;
+         }
+      }
+      & > ul {
+         flex-direction: column;
+         top: 8%;
+         padding: 0 20px;
+         position: absolute;
+         align-items: flex-start;
+         & li {
+            background-color: rgba(255, 255, 255, 0) !important;
+            &:hover {
+               & span {
+                  background-color: rgba(255, 255, 255, 0) !important;
+               }
+               & ul {
+                  position: relative;
+                  width: 100%;
+                  background-color: #00000000;
+                  & li {
+                     padding: 0;
+                     text-align: initial;
+                  }
+               }
+            }
+         }
+      }
+   }
+   .search {
+      justify-content: flex-end;
+      margin-right: 20px;
+      & input {
+         display: block;
+      }
+   }
+   .menu-list {
+      cursor: pointer;
+      position: fixed;
+      // z-index: 10;
+      display: block !important;
+      & ion-icon {
+         font-size: 35px;
+         color: $text_color;
+      }
+   }
+   .menu .list {
+      position: relative;
+      margin: 15px 0 10px 20px;
+      background-color: rgba(255, 255, 255, 0) !important;
+      & li {
+         margin: 8px 0;
+      }
+   }
+}
+
+@media screen and (max-width: 425px) {
+   .our-story-header {
+      padding: 0 20px;
+      & .our-story-logo {
+         & a {
+            font-size: 20px;
+            & ion-icon {
+               font-size: 35px;
+               margin-top: -5px;
+            }
+            & span {
+               margin-left: -5px;
+            }
+         }
+      }
+      & > a {
+         padding: 5px 5px;
+      }
+   }
+   .menu {
+      position: fixed;
+      width: 50%;
+      & > ul {
+         flex-direction: column;
+         top: 8%;
+         padding: 0;
+         position: absolute;
+         align-items: flex-start;
+      }
+   }
+   .page-top-content {
+      font-size: 60%;
+   }
+   /////////////////////////////////// watchMovie.html
+   .movie-content {
+      position: relative;
+      padding: 0;
+
+      & .content {
+         padding: 20px 0;
+      }
+   }
+   .ep-container {
+      & ul {
+         grid-template-columns: repeat(3, 1fr);
+      }
+   }
+}
+@media screen and (max-width: 380px) {
+   .our-story-header {
+      padding: 0 10px;
+   }
+   .menu ul li a {
+      padding: 5px;
+   }
+   .search {
+      & ion-icon {
+         margin-left: 0px;
+         margin-right: 5px;
+      }
+   }
+   .page-top-content {
+      font-size: 50%;
+   }
+   .ep-container {
+      & ul {
+         grid-template-columns: repeat(3.5, 1fr);
+      }
+   }
+}
+@media screen and (max-width: 320px) {
+   /////////////////////////////////// watchMovie.html
+   .ep-container {
+      & ul {
+         grid-template-columns: repeat(3, 1fr);
+      }
+   }
+}

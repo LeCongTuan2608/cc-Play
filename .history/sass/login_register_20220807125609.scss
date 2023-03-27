@@ -1,0 +1,45 @@
+* {
+   padding: 0;
+   margin: 0;
+   box-sizing: border-box;
+}
+body {
+   width: 100%;
+   height: 100%;
+   background-image: url('https://bom.so/sV6DXV');
+}
+.baseLayout {
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+   padding: 10% 0;
+}
+.body {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+.body-container {
+   display: flex;
+   min-width: 300px;
+   max-width: 400px;
+   background-color: white;
+   border-radius: 15px;
+   flex-direction: column;
+   padding: 30px;
+}
+.body-container-top {
+   text-align: center;
+   padding: 0 30px;
+}
+.body-container-mid {
+   margin: 20px 0;
+}
+.form-login {
+   &.form-group {
+      display: flex;
+      & input {
+         width: 100%;
+      }
+   }
+}

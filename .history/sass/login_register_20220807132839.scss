@@ -1,0 +1,104 @@
+* {
+   padding: 0;
+   margin: 0;
+   box-sizing: border-box;
+}
+body {
+   width: 100%;
+   height: 100%;
+   background-image: url('https://bom.so/sV6DXV');
+}
+.baseLayout {
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+   padding: 10% 0;
+}
+.body {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+.body-container {
+   display: flex;
+   min-width: 300px;
+   max-width: 400px;
+   background-color: white;
+   border-radius: 15px;
+   flex-direction: column;
+   padding: 30px;
+}
+.body-container-top {
+   text-align: center;
+   padding: 0 30px;
+   & .message {
+      margin: 10px 0;
+   }
+}
+.body-container-mid {
+   margin: 20px 0 10px 0;
+}
+.form-login {
+   & .form-group {
+      display: flex;
+      flex-direction: column;
+      margin: 10px 0;
+      & input {
+         width: 100%;
+         padding: 10px;
+         border-radius: 7px;
+         outline: none;
+         border: 3px solid rgba(163, 163, 163, 0.734);
+         &:focus {
+            border: 3px solid rgb(50, 175, 217);
+         }
+      }
+      & .message {
+      }
+   }
+}
+.submit-form {
+   margin: 10px 0;
+   & button {
+      width: 100%;
+      padding: 10px 0;
+      border-radius: 7px;
+      outline: none;
+      border: 2px solid;
+      background-color: #ea4c89;
+      color: white;
+      font-weight: 600;
+      &:active {
+         background-color: white;
+         border: 2px solid #ea4c89;
+         color: black;
+      }
+   }
+}
+.body-container-bottom {
+   display: flex;
+   flex-direction: column;
+   & > span {
+      text-align: center;
+   }
+   & .signIn-another {
+      display: flex;
+      flex: 1;
+      justify-content: center;
+      align-items: center;
+      justify-content: space-around;
+      & > span {
+         padding: 5px 10px;
+         background-color: #ea4c89;
+         border-radius: 7px;
+         color: white;
+         font-weight: 600;
+         min-width: 105px;
+         & ion-icon {
+            vertical-align: middle;
+            color: black;
+            margin: 0 5px 0 0;
+         }
+      }
+   }
+}

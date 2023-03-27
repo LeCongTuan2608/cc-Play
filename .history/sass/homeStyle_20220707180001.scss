@@ -1,0 +1,200 @@
+* {
+   padding: 0;
+   margin: 0;
+}
+body {
+   width: 100%;
+   height: 100%;
+   font-size: 100%;
+}
+//phan dau trang
+.our-story-header-wrapper {
+   position: absolute;
+   width: 100%;
+   height: 80px;
+   z-index: 10;
+}
+.our-story-header {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   height: 100%;
+   padding: 0 40px;
+}
+.our-story-logo {
+   & a {
+      text-decoration: none;
+   }
+   & a > ion-icon {
+      vertical-align: middle;
+      font-size: 70px;
+      color: white;
+   }
+}
+.our-story-login {
+   background-color: rgb(216, 75, 75);
+   padding: 10px 20px;
+   border-radius: 10px;
+   cursor: pointer;
+   & a {
+      text-decoration: none;
+      color: white;
+   }
+   & ion-icon {
+      font-size: 25px;
+      vertical-align: middle;
+   }
+}
+//phan than trang
+.middle-page {
+   display: block;
+}
+.middle-page-top {
+   position: relative;
+   padding-top: 50%;
+   border-bottom: 20px solid #000000f2;
+}
+.page-top-bgr {
+   background-image: url('https://bom.so/sV6DXV');
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+   z-index: 1;
+}
+//tạo độ tối cho bgr
+.concord-img {
+   position: absolute;
+   bottom: 0;
+   top: 0;
+   right: 0;
+   left: 0;
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+.page-top-bgr-gradient {
+   background-image: linear-gradient(180deg, #000000 0%, rgba(249, 249, 249, 0) 50%, #000000 100%);
+   opacity: 1;
+   z-index: 2;
+}
+.middle-page-mid {
+   position: relative;
+   padding: 100px 60px;
+   background-color: #000000;
+}
+.middle-page-mid-posters {
+   display: flex;
+   justify-content: center;
+   & ul {
+      width: 80%;
+      height: 100%;
+      position: relative;
+   }
+   & ul h2 {
+      color: white;
+      position: absolute;
+      bottom: 10%;
+      z-index: 3;
+      left: 5%;
+   }
+   & a img {
+      width: 100%;
+      height: 100%;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      border-radius: 7px;
+   }
+   & ul .bgr-opacity {
+      background-image: linear-gradient(180deg, rgba(249, 249, 249, 0) 0%, #00000098 100%);
+      opacity: 0.5;
+      z-index: 2;
+      width: 100%;
+      height: 100%;
+   }
+}
+//===========================================
+//===========================================
+.home-category-highlights {
+   margin: 50px 0 50px;
+   padding: 0 10%;
+}
+.items-category {
+   margin-bottom: 50px;
+}
+.small-slider {
+   display: flex;
+   justify-content: space-between;
+}
+.title {
+   padding: 10px 0 20px;
+   & a {
+      text-decoration: none;
+      color: white;
+   }
+}
+.container-swiper {
+   width: 18.5%;
+}
+.movie-swiper-slider {
+   & a {
+      color: white;
+      text-decoration: none;
+      padding: 5px;
+      width: 100%;
+   }
+}
+.movie-swiper-slider:hover {
+   & a img {
+      opacity: 0.9;
+      transform: scale(1.3);
+      transition: 1s;
+   }
+}
+.posters-movie {
+   overflow: hidden;
+   & a img {
+      width: 100px;
+      height: 100%;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      border-radius: 7px;
+   }
+}
+@media screen and (max-width: 1280px) {
+   .home-category-highlights {
+      margin: 50px 0 50px;
+      padding: 0 5%;
+   }
+}
+@media screen and (max-width: 1024px) {
+   .middle-page-mid-posters {
+      & ul {
+         width: 90%;
+         height: 100%;
+      }
+   }
+   .home-category-highlights {
+      margin: 50px 0 50px;
+      padding: 0 2%;
+   }
+}
+@media screen and (max-width: 720px) {
+   h2 {
+      font-size: 17px;
+   }
+   .middle-page-mid-posters {
+      & ul {
+         width: 100%;
+         height: 100%;
+      }
+   }
+   .home-category-highlights {
+      margin: 50px 0 50px;
+      padding: 0;
+   }
+   .middle-page-mid {
+      padding: 5%;
+   }
+}

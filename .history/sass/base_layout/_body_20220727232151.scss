@@ -1,0 +1,160 @@
+@import './variable';
+// phần thân
+.middle-page {
+   display: block;
+}
+.middle-page-top {
+   position: relative;
+   padding-top: 50%;
+   border-bottom: 5px solid #000000f2;
+}
+.page-top-bgr {
+   background-image: url('https://bom.so/sV6DXV');
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+   z-index: 1;
+}
+//tạo độ tối cho bgr
+.concord-img {
+   position: absolute;
+   bottom: 0;
+   top: 0;
+   right: 0;
+   left: 0;
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+.bgr-opacity {
+   background-image: linear-gradient(180deg, rgba(249, 249, 249, 0) 0%, #000000d0 100%);
+   opacity: 0.5;
+   z-index: 2;
+   width: 100%;
+   height: 100%;
+}
+//////////////////////////
+.page-top-bgr-gradient {
+   background-image: linear-gradient(180deg, #000000 0%, rgba(249, 249, 249, 0) 50%, #000000 100%);
+   opacity: 1;
+   z-index: 2;
+}
+.page-top-content {
+   position: absolute;
+   z-index: 5;
+   color: $text_color;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   text-align: center;
+   font-size: 30px;
+}
+.middle-page-mid {
+   padding: 100px 60px;
+   // background-color: #000000eb;
+   background-image: linear-gradient(to top, #1e3c72 0%, #2a3345 1%, #002f81 100%);
+   background-attachment: fixed;
+}
+.middle-page-mid-posters {
+   display: flex;
+   justify-content: center;
+   & ul {
+      width: 80%;
+      height: 100%;
+      & li h2 {
+         color: $text_color;
+         position: absolute;
+         bottom: 10%;
+         z-index: 3;
+         left: 5%;
+         display: inline;
+      }
+   }
+   //===================================================================
+   //tất cả thẻ a trong cùng div cha
+   & a {
+      text-decoration: none;
+      position: relative;
+      & img {
+         width: 100%;
+         height: 100%;
+         background-position: center;
+         background-repeat: no-repeat;
+         background-size: cover;
+         border-radius: 7px;
+      }
+   }
+   //===================================================================
+}
+
+//===========================================
+//===========================================
+.home-category-highlights {
+   margin: 50px 0 50px;
+   padding: 0 10%;
+}
+.items-category {
+   margin-bottom: 50px;
+}
+.small-slider {
+   display: flex;
+   gap: 0px 20px;
+   // margin-left: -20px;
+}
+.gridLayout {
+   display: grid;
+   grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+   grid-gap: 30px 20px;
+}
+.slick-list {
+   // margin-left: -20px;
+}
+.title {
+   padding: 10px 0 20px;
+   & a {
+      text-decoration: none;
+      color: $text_color;
+      display: inline-block;
+   }
+}
+.container-swiper {
+   flex: 1;
+}
+.movie-swiper-slider {
+   & a {
+      text-decoration: none;
+      & .posters-movie {
+         overflow: hidden;
+         border-radius: 7px;
+         box-sizing: border-box;
+         margin-bottom: 10px;
+         & img {
+            width: 100%;
+            height: 219px;
+            border-radius: 7px;
+            object-fit: cover;
+            color: $text_color;
+         }
+      }
+      & .title-movie {
+         overflow: hidden;
+         display: -webkit-box;
+         -webkit-line-clamp: 2;
+         -webkit-box-orient: vertical;
+         text-overflow: ellipsis;
+         white-space: normal;
+         line-height: 1.5;
+         cursor: pointer;
+         & p {
+            color: $text_color;
+         }
+      }
+   }
+}
+.movie-swiper-slider:hover {
+   & .posters-movie img {
+      opacity: 0.5;
+      transform: scale(1.3);
+      transition: 0.7s;
+   }
+}

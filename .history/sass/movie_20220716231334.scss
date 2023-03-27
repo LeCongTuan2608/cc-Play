@@ -1,0 +1,17 @@
+@import './base_layout/_header';
+// @import './base_layout/_body';
+* {
+   padding: 0;
+   margin: 0;
+   box-sizing: border-box;
+}
+body {
+   width: 100%;
+   height: 100%;
+   font-size: 100%;
+   font-family: Netflix Sans, Helvetica Neue, Helvetica, Arial, sans-serif;
+   background-color: #a95c5ceb;
+}
+.our-story-header-wrapper {
+   background-color: #000000ac;
+}

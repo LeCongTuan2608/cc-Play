@@ -1,0 +1,44 @@
+@import './base_layout/header';
+@import './base_layout/body';
+@import './base_layout/footer';
+@import './base_layout/variable';
+//
+
+* {
+   padding: 0;
+   margin: 0;
+   box-sizing: border-box;
+}
+body {
+   width: 100%;
+   height: 100%;
+   font-size: 100%;
+   font-family: Netflix Sans, Helvetica Neue, Helvetica, Arial, sans-serif;
+   background-color: #000000eb;
+}
+
+//design header
+.our-story-header-wrapper {
+   // background-color: #000000ac;
+}
+//body
+.our-body {
+   width: 100%;
+   height: 100%;
+}
+.body-category {
+   padding: 100px 60px;
+}
+.category-list {
+   padding: 0 10%;
+   & .title {
+      color: $text_color;
+   }
+}
+//design footer
+.footer {
+   position: sticky;
+}
+@import './base_layout/loading';
+@import './base_layout/slickSlider';
+@import './base_layout/responsize';

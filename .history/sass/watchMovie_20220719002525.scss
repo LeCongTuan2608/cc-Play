@@ -1,0 +1,58 @@
+@import './base_layout/header';
+@import './base_layout/body';
+@import './base_layout/footer';
+//
+@import './base_layout/loading';
+@import './base_layout/slickSlider';
+@import './base_layout/responsize';
+
+* {
+   padding: 0;
+   margin: 0;
+   box-sizing: border-box;
+   text-emphasis: none;
+   list-style-type: none;
+}
+body {
+   width: 100%;
+   height: 100%;
+   font-size: 100%;
+   font-family: Netflix Sans, Helvetica Neue, Helvetica, Arial, sans-serif;
+   background-color: #000000eb;
+}
+//design header
+.our-story-header-wrapper {
+   background-color: #000000ac;
+}
+.our-body {
+   width: 100%;
+   height: 100%;
+}
+.body-container {
+   padding: 150px 15%;
+   display: flex;
+   flex-direction: column;
+}
+.infor-movie {
+   display: flex;
+   margin-bottom: 100px;
+}
+.img-TheMovie {
+   flex: calc(100% / 6);
+   & img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+   }
+}
+.movie-content {
+   width: 100%;
+   height: 100%;
+   padding: 0 2%;
+   color: white;
+   flex: 50%;
+}
+.infor-publisher {
+   color: white;
+   flex: calc(100% / 3);
+}

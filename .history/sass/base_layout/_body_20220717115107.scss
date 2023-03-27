@@ -1,0 +1,142 @@
+// phần thân trang
+.middle-page {
+   display: block;
+}
+.middle-page-top {
+   position: relative;
+   padding-top: 50%;
+   border-bottom: 5px solid #000000f2;
+}
+.page-top-bgr {
+   background-image: url('https://bom.so/sV6DXV');
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+   z-index: 1;
+}
+//tạo độ tối cho bgr
+.concord-img {
+   position: absolute;
+   bottom: 0;
+   top: 0;
+   right: 0;
+   left: 0;
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+.page-top-bgr-gradient {
+   background-image: linear-gradient(180deg, #000000 0%, rgba(249, 249, 249, 0) 50%, #000000 100%);
+   opacity: 1;
+   z-index: 2;
+}
+.page-top-content {
+   position: absolute;
+   z-index: 5;
+   color: white;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   text-align: center;
+   font-size: 30px;
+}
+.middle-page-mid {
+   padding: 100px 60px;
+   background-color: #000000eb;
+}
+.middle-page-mid-posters {
+   display: flex;
+   justify-content: center;
+   & ul {
+      width: 80%;
+      height: 100%;
+      & li h2 {
+         color: white;
+         position: absolute;
+         bottom: 10%;
+         z-index: 3;
+         left: 5%;
+         display: inline;
+      }
+   }
+   //===================================================================
+   //tất cả thẻ a trong cùng div cha
+   & a {
+      text-decoration: none;
+      position: relative;
+      & img {
+         width: 100%;
+         height: 100%;
+         background-position: center;
+         background-repeat: no-repeat;
+         background-size: cover;
+         border-radius: 7px;
+      }
+   }
+   //===================================================================
+   & ul .bgr-opacity {
+      background-image: linear-gradient(180deg, rgba(249, 249, 249, 0) 0%, #00000098 100%);
+      opacity: 0.5;
+      z-index: 2;
+      width: 100%;
+      height: 100%;
+   }
+}
+//===========================================
+//===========================================
+.home-category-highlights {
+   margin: 50px 0 50px;
+   padding: 0 10%;
+}
+.items-category {
+   margin-bottom: 50px;
+}
+.small-slider {
+   display: flex;
+   justify-content: space-between;
+   overflow: hidden;
+   // & .container-swiper:last-child {
+   //    margin-right: -20px;
+   // }
+}
+.title {
+   padding: 10px 0 20px;
+   & a {
+      text-decoration: none;
+      color: white;
+      display: inline-block;
+   }
+}
+.container-swiper {
+   margin-right: 20px;
+   flex: 1;
+}
+.movie-swiper-slider {
+   & > a {
+      color: white;
+      text-decoration: none;
+      padding: 10px 0;
+      overflow: hidden;
+   }
+}
+.movie-swiper-slider:hover {
+   & a img {
+      opacity: 0.5;
+      transform: scale(1.3);
+      transition: 0.7s;
+   }
+}
+.posters-movie {
+   overflow: hidden;
+   border-radius: 7px;
+   box-sizing: border-box;
+   margin-bottom: 10px;
+   & a img {
+      width: 100%;
+      height: 100%;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      border-radius: 7px;
+   }
+}
